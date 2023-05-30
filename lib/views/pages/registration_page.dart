@@ -51,6 +51,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     hintText: 'Password',
                     obscureText: true,
                   ),
+                  const SizedBox(height: 15,),
 
                   MyTextField(
                     controller: confirmPasswordTextController,
@@ -79,9 +80,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                       const SizedBox(width: 5,),
                       GestureDetector(
-                        onTap: (){
-                          widget.onTap;
-                        },
+                        onTap: widget.onTap,
                         child: const Text(
                           'Login Here!',
                           style: TextStyle(

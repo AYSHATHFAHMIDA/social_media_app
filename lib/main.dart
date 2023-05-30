@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:social_media_app/views/pages/login_page.dart';
-import 'package:social_media_app/views/pages/registration_page.dart';
+import 'auth/login_or_register.dart';
 
 void main(){
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget{
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: RegisterPage(onTap: () {  },),
+      home: LoginRegister(),
     );
   }
 }
